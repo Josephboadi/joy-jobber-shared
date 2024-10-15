@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "license": "MIT",
+  "main": "index.js",
   "types": "./src/index.d.ts",
   "description": "Helpers library for Joy Jobber app",
   "engines": {
@@ -18,11 +19,11 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "@Josephboadi/joy-jobber-shared",
+  "name": "@josephboadi/joy-jobber-shared",
   "author": "Joseph Boadi",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Josephboadi/joy-jobber-shared.git"
+    "url": "git+https://github.com/josephboadi/joy-jobber-shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
