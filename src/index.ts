@@ -1,23 +1,3 @@
-export { uploads, videoUpload } from './cloudinary-upload';
-export {
-  BadRequestError,
-  CustomError,
-  ErrnoException,
-  FileTooLargeError,
-  IError,
-  IErrorResponse,
-  NotAuthorizedError,
-  NotFoundError,
-  ServerError,
-} from './error-handler';
-export { verifyGatewayRequest } from './gateway-middleware';
-export {
-  firstLetterUppercase,
-  isDataURL,
-  isEmail,
-  lowerCase,
-  toUpperCase,
-} from './helpers';
 export {
   IAuth,
   IAuthBuyerMessageDetails,
@@ -33,8 +13,8 @@ export {
   IResetPassword,
   ISignInPayload,
   ISignUpPayload,
-} from './interfaces/auth.interface';
-export { IBuyerDocument, IReduxBuyer } from './interfaces/buyer.interface';
+} from './auth.interface';
+export { IBuyerDocument, IReduxBuyer } from './buyer.interface';
 export {
   IChatBoxProps,
   IChatBuyerProps,
@@ -43,8 +23,21 @@ export {
   IConversationDocument,
   IMessageDetails,
   IMessageDocument,
-} from './interfaces/chat.interface';
-export { IEmailLocals } from './interfaces/email.interface';
+} from './chat.interface';
+export { uploads, videoUpload } from './cloudinary-upload';
+export { IEmailLocals } from './email.interface';
+export {
+  BadRequestError,
+  CustomError,
+  ErrnoException,
+  FileTooLargeError,
+  IError,
+  IErrorResponse,
+  NotAuthorizedError,
+  NotFoundError,
+  ServerError,
+} from './error-handler';
+export { verifyGatewayRequest } from './gateway-middleware';
 export {
   GigType,
   ICreateGig,
@@ -56,7 +49,15 @@ export {
   IGigsProps,
   ISelectedBudget,
   ISellerGig,
-} from './interfaces/gig.interface';
+} from './gig.interface';
+export {
+  firstLetterUppercase,
+  isDataURL,
+  isEmail,
+  lowerCase,
+  toUpperCase,
+} from './helpers';
+export { winstonLogger } from './logger';
 export {
   IDeliveredWork,
   IExtendedDelivery,
@@ -66,14 +67,14 @@ export {
   IOrderMessage,
   IOrderNotifcation,
   IOrderReview,
-} from './interfaces/order.interface';
+} from './order.interface';
 export {
   IRatingCategories,
   IRatingCategoryItem,
   IRatingTypes,
   IReviewDocument,
   IReviewMessageDetails,
-} from './interfaces/review.interface';
+} from './review.interface';
 export {
   IHitsTotal,
   IPaginateProps,
@@ -81,7 +82,7 @@ export {
   IQueryString,
   ISearchResult,
   ITerm,
-} from './interfaces/search.interface';
+} from './search.interface';
 export {
   ICertificate,
   IEducation,
@@ -89,5 +90,4 @@ export {
   ILanguage,
   ISellerDocument,
   SellerType,
-} from './interfaces/seller.interface';
-export { winstonLogger } from './logger';
+} from './seller.interface';
